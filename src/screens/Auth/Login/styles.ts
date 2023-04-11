@@ -1,22 +1,26 @@
 import React from 'react';
-import styled from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: #f5fcff;
+  background-color: ${({ theme }) => theme.colors.white};
 `;
 
 export const Title = styled.Text`
-  margin-left: 16px;
-  font-size: 36px;
-  align-self: flex-start;
+  ${({ theme }) => css`
+    margin-left: ${theme.spaces.regular};
+    font-size: ${theme.fontsize.xxl};
+    align-self: flex-start;
+  `}
 `;
 
 export const Form = styled.View`
   width: 92%;
-  margin-top: 16px;
+  ${({ theme }) => css`
+    margin-top: ${theme.spaces.regular};
+  `}
 `;
 
 export const InputContainer = styled.View`
