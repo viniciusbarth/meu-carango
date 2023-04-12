@@ -57,7 +57,10 @@ export const Button = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
+ ${({ theme }) => css`
+    margin-top: ${theme.spaces.regular};
+    color: ${theme.colors.white};
+    font-size: 18px;
+    text-align: center;
+  `}
 `;
