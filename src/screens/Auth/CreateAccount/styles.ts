@@ -24,7 +24,9 @@ export const Form = styled.View`
 `;
 
 export const InputContainer = styled.View`
-  margin-bottom: 20px;
+  ${({ theme }) => css`
+    margin-bottom: ${theme.spaces.regular};
+  `}
 `;
 
 export const InputLabel = styled.Text`
@@ -40,7 +42,6 @@ export const Input = styled.TextInput`
 `;
 
 export const PasswordInput = styled.TextInput`
-  margin-bottom: 20px;
   border-radius: 6px;
   padding: 10px;
   border: 2px solid black;
