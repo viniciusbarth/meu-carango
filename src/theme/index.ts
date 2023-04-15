@@ -10,7 +10,7 @@ export default {
 
     white: '#FFFFFF',
 
-    grayLight: 'C6C6C6',
+    grayLight: '#C6C6C6',
   },
   fontsize: {
     sm: '14px',
