@@ -12,13 +12,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <StatusBar />
       <Menu />
-      <Alert
-        action={() => {}}
-        actionTitle="Teste button"
-        description="deu merda"
-        title="Cadastro"
-        variant="Success"
-      />
+      <Home />
     </ThemeProvider>
   );
 }
